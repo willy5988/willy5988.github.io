@@ -1,0 +1,25 @@
+.navbar {
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #90e5ff;
+  text-decoration: none;
+}
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+.navbar-link {
+  color: #00c3ff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 2px 20px;
+  border-radius: 10px;
+  border-color: aliceblue;
+  border-width: 1px;
+  border-style: solid;
+}

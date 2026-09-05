@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Navbar from "./Navbar";
+import Certs from "./Certs";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <title>willy</title>
-      <h1>hello</h1>
-      <h2>heloo</h2>
-    </>
+    <HashRouter>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/certs" element={<Certs />} />
+        </Routes>
+      </main>
+    </HashRouter>
   );
 }
 
