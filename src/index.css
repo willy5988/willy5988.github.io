@@ -1,3 +1,36 @@
+:root {
+  --text: #9ca3af;
+  --text-h: #f3f4f6;
+  --bg: #16171d;
+  --border: #2e303a;
+  --code-bg: #1f2028;
+
+  --sans:
+    system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+  --heading:
+    system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font-family: var(--sans);
+  line-height: 1.5;
+  color: var(--text-h);
+  background-color: var(--bg);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text-h);
+}
+
 #root {
   width: 100%;
   min-height: 100vh;
@@ -5,62 +38,44 @@
   flex-direction: column;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #f3f4f6;
-    background-color: #16171d;
-  }
-}
-
-body {
-  margin: 0;
-}
-
 .content-container {
+  width: 90%;
+  max-width: 800px;
   margin: 0 auto;
   text-align: left;
-  padding: 20%;
-  padding-top: 0;
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  padding: 40px 0;
 }
 
 h1,
 h2 {
   font-family: var(--heading);
-  font-weight: 500;
+  font-weight: bold;
   color: var(--text-h);
 }
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+  font-size: 48px;
+  letter-spacing: -1.5px;
+  margin: 24px 0;
 }
+
 h2 {
-  font-size: 40px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 30px;
+  font-size: 32px;
+  margin: 0 0 12px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
   }
 }
+
 p {
   margin: 0;
+  color: var(--text);
 }
 
 code,
