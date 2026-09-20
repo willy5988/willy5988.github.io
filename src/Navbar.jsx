@@ -9,11 +9,11 @@ function Navbar() {
       </Link>
 
       <div className="navbar-menu">
+        <Link to="/" className="navbar-link">
+          首頁
+        </Link>
         <Link to="/about" className="navbar-link">
           關於
-        </Link>
-        <Link to="/certs" className="navbar-link">
-          經歷
         </Link>
       </div>
     </nav>

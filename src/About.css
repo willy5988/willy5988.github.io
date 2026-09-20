@@ -5,5 +5,11 @@
 .table th,
 .table td {
   padding: 12px;
-  border: 1px solid #757575;
+  border: 0;
 }
+
+
+.marginLeft{
+  margin-left: 25px;
+}
+

@@ -2,21 +2,21 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Navbar from "./Navbar";
-import Certs from "./Certs";
+import Footer from './Footer.jsx';
 
-function App() {
+export default function App() {
   return (
     <HashRouter>
-      <Navbar />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/certs" element={<Certs />} />
-        </Routes>
-      </main>
+      <div style={{display:"flex", flexDirection:"column", minHeight:"100vh",}}> 
+        <Navbar />
+        <main style={{flex:1}}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </HashRouter>
   );
 }
-
-export default App;

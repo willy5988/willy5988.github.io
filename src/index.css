@@ -18,6 +18,13 @@
   color-scheme: dark;
 }
 
+* {
+  font-family: "LXGW WenKai Mono TC","Ephesis", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body {
   min-height: 100vh;
   background-color: var(--bg);
@@ -33,7 +40,7 @@ body {
   box-sizing: border-box;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 2048px) {
   #root {
     padding: 0 8%;
   }
@@ -47,12 +54,10 @@ body {
 
 h1,
 h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+  font-weight: 700;
 }
 
-h1 {
+h1 {    
   font-size: 48px;
   letter-spacing: -1.5px;
   margin: 24px 0;
