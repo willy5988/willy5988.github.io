@@ -7,11 +7,11 @@ function About() {
       <table className="table">
         <tbody>
           <tr>
-            <td>Name</td>
+            <td>姓名</td>
             <td>Willy</td>
           </tr>
           <tr>
-            <td>Age</td>
+            <td>年紀</td>
             <td>17</td>
           </tr>
           <tr>
@@ -19,16 +19,12 @@ function About() {
             <td>Taiwan</td>
           </tr>
           <tr>
-            <td>Occupation</td>
+            <td>職業</td>
             <td>Student</td>
           </tr>
           <tr>
-            <td>Education</td>
+            <td>目前學歷</td>
             <td>High School</td>
-          </tr>
-          <tr>
-            <td>Languages</td>
-            <td>Chinese</td>
           </tr>
         </tbody>
       </table>
