@@ -7,7 +7,7 @@ export default function About() {
         我是Willy <br />
       </p>
       <p>
-         我經歷了多次的比賽，雖然我抗壓性很低，但我都努力撐過了！<br />
+         我經歷了多次的比賽，目前在學習撰寫手機 App 、 網頁設計<br />
       </p>
       <div style={{ height: "40px" }} />
       <h1>經歷</h1>
